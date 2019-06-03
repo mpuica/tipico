@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "jest",
-    "lint": "eslint --ext .js app tests"
+    "lint": "eslint --ext .js app"
   },
   "keywords": [],
   "author": "Mihail Puica <mpuica@mpdeveloper.ca>",
