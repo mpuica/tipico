@@ -1,0 +1,12 @@
+{
+  "name": "tipico",
+  "version": "1.0.0",
+  "description": "Tipico test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mihail Puica <mpuica@mpdeveloper.ca>",
+  "license": "ISC"
+}
