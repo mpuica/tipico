@@ -4,12 +4,14 @@
   "description": "Tipico test",
   "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint --ext .js app tests"
   },
   "keywords": [],
   "author": "Mihail Puica <mpuica@mpdeveloper.ca>",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^5.16.0",
     "jest": "^24.8.0"
   }
 }
