@@ -9,22 +9,23 @@ const Tipico = ({
     chunkNums: [],
 
     /**
-     * get the maximum number of digits in the array of numbers
-     * @param {array} nums The array of numbers to be written in the table
+     * get the maximum number of digits of a number in the array, which will give th width of a cell
+     * @param {array} array The array from which we extract the longest number
+     * @returns {int}
      *
      */
-    getCellMaxWidth: function (nums) {
-        return Math.max(...nums).toString().length
+    getCellMaxWidth: function (array) {
+        return Math.max(...array).toString().length
     },
 
     /**
      * write the horizontal separation line based on the number of cells and the width of a cell
-     * @param {int} cols The number of cells per line
+     * @param {int} cells The number of cells per line
      * @param {int} cellWidth The number of digits in each cell
      *
      */
-    writeSeparatorLine: function (cols, cellWidth) {
-        return  this.cellCorner + (this.cellHLine.repeat(cellWidth) + this.cellCorner).repeat(cols)
+    writeSeparatorLine: function (cells, cellWidth) {
+        return  this.cellCorner + (this.cellHLine.repeat(cellWidth) + this.cellCorner).repeat(cells)
     },
 
     /**
