@@ -6,8 +6,8 @@ Mihail Puica
 - writing the tests and the initial method (displayNumbers) for the main module (Tipico.js)
 - added the entry call to displayNumbers on app.js
 - added a function to calculate the max width of a cell
-- added a function to write horizontal sepration lines based on nmber of cells and the cell width
-
+- added a function to write horizontal separation lines based on number of cells and the cell width
+- added function to split the array
 
 
 
