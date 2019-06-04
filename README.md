@@ -5,6 +5,7 @@ Mihail Puica
 - created a boilerplate with Node, ESLint and Jest
 - writing the tests and the initial method (displayNumbers) for the main module (Tipico.js)
 - added the entry call to displayNumbers on app.js
+- added a function to calculate the max width of a cell     
 
 
 
