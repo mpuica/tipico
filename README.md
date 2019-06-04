@@ -9,6 +9,7 @@ Mihail Puica
 - added function to write horizontal separation lines based on number of cells and the cell width
 - added function to split the array
 - added function to write a formatted line of values
+- write content of the displayNums function to display the formatted table
 
 
 

@@ -63,8 +63,18 @@ const Tipico = ({
      *
      */
     displayNumbers: function (nums, cols) {
+
+        // if number of columns greater that the length of the array
+        let maxCols = (cols <= nums.length) ? cols : nums.length
+
         this.chunkNums = this.chunkArray(nums, cols)
         this.cellMaxWidth = this.getCellMaxWidth(nums)
+
+        process.stdout.write(this.writeSeparatorLine(maxCols, this.cellMaxWidth) + '\n')
+        this.chunkNums.map((item) => {
+            process.stdout.write(this.writeValuesLine(item,this.cellMaxWidth) + '\n')
+            process.stdout.write(this.writeSeparatorLine(item.length, this.cellMaxWidth) + '\n')
+        })
     }
 })
 
