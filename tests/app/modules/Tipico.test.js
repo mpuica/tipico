@@ -5,6 +5,7 @@ const displayNumbers = require('../../../app/modules/Tipico').displayNumbers
 const getCellMaxWidth = require('../../../app/modules/Tipico').getCellMaxWidth
 const writeSeparatorLine = require('../../../app/modules/Tipico').writeSeparatorLine
 const chunkArray = require('../../../app/modules/Tipico').chunkArray
+const writeValuesLine = require('../../../app/modules/Tipico').writeValuesLine
 
 describe('Tipico', () => {
     test('should exist', () => {
@@ -53,6 +54,17 @@ describe('Tipico', () => {
         })
 
     })
+
+    describe('writeValuesLine', () => {
+        test('should exist', () => {
+            expect(writeValuesLine).toBeDefined()
+        })
+
+        test('should be a function', () => {
+            expect(typeof writeValuesLine).toBe("function")
+        })
+
+    })
 })
 
 try {
@@ -61,6 +73,7 @@ try {
     module.exports.getCellMaxWidth = getCellMaxWidth
     module.exports.writeSeparatorLine = writeSeparatorLine
     module.exports.chunkArray = chunkArray
+    module.exports.writeValuesLine = writeValuesLine
 } catch (error) {
     console.log('we caught an error')
 }

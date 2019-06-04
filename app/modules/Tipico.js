@@ -29,6 +29,18 @@ const Tipico = ({
     },
 
     /**
+     * write a line of cells from an array of a certain width eac cell
+     * @param {array} array The array of numbers
+     * @param {int} cellWidth The number of digits in each cell
+     * @returns {string}
+     */
+    writeValuesLine: function (array, cellWidth) {
+        return  this.cellVLine + (array.map( (item) => {
+            return item.toString().padStart(cellWidth, ' ') + this.cellVLine
+        })).join('')
+    },
+
+    /**
      * split an existing array into smaller arrays
      * @param {array} array The source array
      * @param {int} size The size of each chunk
