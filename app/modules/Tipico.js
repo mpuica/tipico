@@ -17,6 +17,16 @@ const Tipico = ({
     },
 
     /**
+     * write the horizontal separation line based on the number of cells and the width of a cell
+     * @param {int} cols The number of cells per line
+     * @param {int} cellWidth The number of digits in each cell
+     *
+     */
+    writeSeparatorLine: function (cols, cellWidth) {
+        return  this.cellCorner + (this.cellHLine.repeat(cellWidth) + this.cellCorner).repeat(cols)
+    },
+
+    /**
      * Main function to be called in app.js
      * @param {array} nums The array of numbers to be written in the table
      * @param {int} cols The number of cells per row
